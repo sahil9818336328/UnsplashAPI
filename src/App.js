@@ -3,7 +3,8 @@ import { FaSearch } from "react-icons/fa";
 
 // USING UNSPLASH API
 import Photos from "./Photos";
-const clientID = `?client_id=${"tqJeBoY4G0UACbpOHLHwduQM2zKIHLRn8s-ghTHz594"}`;
+// GENERATE API_ACCESS_KEY AND PASTE BELOW
+const clientID = `?client_id=${process.env.REACT_APP_ACCESS_KEY}`;
 const mainUrl = `https://api.unsplash.com/photos/`;
 const searchUrl = `https://api.unsplash.com/search/photos/`;
 
