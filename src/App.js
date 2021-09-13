@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaSearch } from 'react-icons/fa'
 import $ from 'jquery'
 // USING UNSPLASH API
@@ -18,12 +18,17 @@ const App = () => {
     })
   }, [])
 
+  useEffect(() => {
+    fetchImages()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   // STATE VARIABLES
   const [isLoading, setIsLoading] = useState(false)
   const [photos, setPhotos] = useState([])
   const [page, setPage] = useState(0)
   const [query, setQuery] = useState('')
-
+  console.log(photos)
   // URL PARAMETERS
   let url
   const urlPage = `&page=${page}`
