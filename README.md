@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-View my deployed app at :- https://wonderful-bardeen-6930fb.netlify.app/
+View my deployed app at :- https://relaxed-lumiere-cd0af5.netlify.app/
 ## Available Scripts
 
 In the project directory, you can run:
